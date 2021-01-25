@@ -1,7 +1,7 @@
 #connect a switch to GPIO15 [pin 20] 
 
 
-from machine import Pin, Timer
+from machine import Pin
 from time import sleep
 
 sw = Pin(15, Pin.IN)
