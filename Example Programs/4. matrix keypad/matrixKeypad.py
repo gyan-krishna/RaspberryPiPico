@@ -1,7 +1,7 @@
 #
 
 from machine import Pin
-
+from time import sleep
 #initialise the keypad,
 #rows = input with pull up
 #cols = output
@@ -45,3 +45,4 @@ while True:
     swState = scanKeypad(keypad)
     if(swState != [-1, -1]):
         print(keys[swState[0]][swState[1]])
+        sleep(0.5)
